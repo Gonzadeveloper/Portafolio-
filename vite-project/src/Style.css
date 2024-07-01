@@ -1,0 +1,46 @@
+body{
+    padding: 3em;
+}
+
+.card{
+    border: none;
+    padding-bottom: 5em ;
+}
+
+img{
+    border-radius: 0.3em;
+}
+
+.p1{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.IconGA{
+    border: solid 1px;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+}
+
+a{
+    margin-right: 2em;
+}
+.IconL{
+    border: solid rgb(72, 167, 245) 1px;
+    width: 14em;
+    height: 3em;
+    align-content: center; 
+}
+
+.IconL:hover{
+    background-color: rgb(0, 140, 255);
+}
+
+.img-hover-effect {
+    transition: transform 0.3s ease;
+  }
+  
+  .img-hover-effect:hover {
+    transform: scale(1.10); /* Aumenta el tamaño al 105% */
+  }
