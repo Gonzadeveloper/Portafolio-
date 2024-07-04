@@ -1,27 +1,32 @@
-import { useState } from 'react'
-import Cards from './Componets/Cards'
-import IconGitHub from "./assets/github.png"
-import IconLinkeind from "./assets/linkedin.png"
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./Style.css"
+import React from 'react';
+import Home from './Componets/Home/Home';
+import Navbar from './Componets/Navbar/Navbar';
+import About from './Componets/About/About';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './Style.css';
+import Contact from './Componets/Contact/Contact';
+import Skills from './Componets/Skills/Skills';
+import Education from './Componets/Education/Education';
+import Proyects from './Componets/Proyects/Proyects';
 
 function App() {
-  
   return (
-
-    <div className='container'>
-            <div className="card mb-3">
-        <img src="https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2022/08/que-es-un-desarrollador-web.png" class="card-img-top" alt="..."/>
-        <div className="card-body">
-          <p className="card-text p1"> ¡Hola soy <span>Gonzalo</span>! un <span>desarrollador web full stack</span> aquí vas a encontrar todos mis proyectos. Puedes cliquear en ellos para ver más informacion tecnica de los mismos y <span>Tecnologías</span> con las que fueron realizados</p>
-          <a href="https://github.com/Gonzadeveloper" className="btn btn-light IconGA">Mi Github <img src={IconGitHub} className="icono-btn" /></a>
-          <a href="https://ar.linkedin.com/in/gonzalo-cayssials-610bb5254" className="btn btn-light IconL">Mi Linkedin <img src={IconLinkeind} className="icono-btn" /></a>
-        </div>
+    <Router>
+        <Navbar />
+      <div className='container divApp'>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path="/about" element={<About />} />
+          <Route path='/Contact' element={<Contact/>} />
+          <Route path='/Skills' element={<Skills/>} />
+          <Route path='/Education' element={<Education/>} />
+          <Route path='/Proyects' element={<Proyects/>} />
+        </Routes>
       </div>
-      <Cards/>
-    </div>
-
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

@@ -1,7 +1,3 @@
-body{
-    padding: 3em;
-}
-
 .card{
     border: none;
     padding-bottom: 5em ;
@@ -47,6 +43,10 @@ a{
     transform: scale(1.10); /* Aumenta el tamaño al 105% */
   }
 
-  span{
+  .span1{
     background-color: rgb(241, 241, 86) ;
+  }
+
+  .divApp{
+    margin-top: 7em;
   }

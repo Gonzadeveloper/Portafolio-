@@ -1,9 +1,9 @@
 import React from 'react';
-import ProyectosData from '../proyectos.json';
+import ProyectosData from '../../proyectos.json';
 import "./Cards.css";
-import IconYoutube from "../assets/youtube.png";
-import IconGitHub from "../assets/github.png";
-import IconWeb from "../assets/sitio-web.png";
+import IconYoutube from "../../assets/youtube.png";
+import IconGitHub from "../../assets/github.png";
+import IconWeb from "../../assets/sitio-web.png";
 
 function Cards() {
   return (
