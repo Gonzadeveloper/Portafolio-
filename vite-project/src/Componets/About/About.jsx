@@ -71,7 +71,7 @@ function About (){
                         <div>
                             <ul>
                                 <li>
-                                    <a href="d2rf2c6bvm78n9.cloudfront.net/new-cert?id=04efae9801215f6765c9c966ad493509922b772a90d2515041fa4ecc14f3f77d">Full Stack, Henry</a>
+                                    <a href="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=04efae9801215f6765c9c966ad493509922b772a90d2515041fa4ecc14f3f77d">Full Stack, Henry</a>
                                     
                                 </li>
                                 <li>
