@@ -1,3 +1,19 @@
 .navbar{
-    margin-bottom: 9em;
+    margin-bottom: 3em;
 }
+
+.navbar-custom {
+    height: 6em;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente con color oscuro */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-bottom: solid 0.5px grey !important; /* Borde inferior gris */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: white !important; /* Color de texto blanco */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: rgb(42, 216, 79) !important; /* Color de texto al pasar el mouse */
+  }
+ 

@@ -7,7 +7,9 @@ import IconWeb from "../../assets/sitio-web.png";
 
 function Cards() {
   return (
-    <div className="cards-container">
+    <div className="cards-container" >
+    <h1 id='Proyects'>Proyectos</h1>
+      <div className="green-lineCard"></div>
       <div className="row">
         {ProyectosData.map((proyecto) => (
           <div key={proyecto.id} className="col-lg-4 col-md-6 mb-4">

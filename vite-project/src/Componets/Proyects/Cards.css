@@ -1,0 +1,93 @@
+.card1 {
+    margin: 0.5em;
+}
+
+.cards-container .card{
+  border: none;
+  padding-bottom: 5em ;
+  background-color: transparent;
+  height: 19em;
+}
+
+
+.IconGA{
+  border: solid 1px;
+  width: 14em;
+  height: 3em;
+  align-content: center;
+}
+
+.IconL{
+  border: solid rgb(42, 216, 79);
+  width: 14em;
+  height: 3em;
+  align-content: center; 
+}
+
+
+.img-hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-effect:hover {
+  transform: scale(1.10); /* Aumenta el tamaño al 105% */
+}
+
+.cards-container .card .card-body{
+  background-color: rgb(39, 39, 39);
+  border-radius: 0.5em;
+}
+
+.icono-btn{
+    width: 1.7em;
+}
+
+.cards-container .card .btn {
+    font-size: 13px;
+    margin: 2px;
+    width: 99px;
+    height: 35px;
+}
+
+.cards-container .card a {
+    border: solid 1px rgb(42, 216, 79);
+    color: rgb(0, 0, 0);
+  }
+
+.cards-container .card a:hover {
+    background-color: rgb(42, 216, 79); /* Color de fondo cuando se pasa el cursor */
+    color: black;
+  }
+
+  .cards-container h1{
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  .cards-container .card .card-title{
+    color: rgb(0, 0, 0);
+  }
+
+  .cards-container .card a{
+    background-color: transparent;
+  }
+
+  .cards-container{
+    margin-bottom: 9em;
+  }
+
+  .card-img-top {
+    height: 170px; /* Altura deseada para las imágenes */
+    object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
+    object-position: center; /* Posición centrada de la imagen dentro del contenedor */
+  }
+
+  .green-lineCard{
+    width: 70em; /* Acho de la línea */
+    height: 1px; /* Grosor de la línea */
+    background-color: rgb(42, 216, 79); /* Color de la línea (verde) */
+    margin-bottom: 10px; /* Espacio entre la línea y el párrafo */
+    margin-bottom: 3em;
+  }

@@ -1,0 +1,52 @@
+.divContact{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9em;
+}
+
+.divForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120em;
+    height: 100%; /* Ajusta la altura según sea necesario */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30em; /* Ancho del formulario */
+  }
+
+  .divForm h3{
+    font-size: 1em;
+  }
+  
+  .divForm > form > input[type="text"],
+  .divForm > form > textarea {
+    width: 100%;
+    margin-bottom: 1.7em; /* Espacio entre elementos del formulario */
+    padding: 8px;
+    border: 1px solid #6d6d6d;
+    border-radius: 0.6em;
+    box-sizing: border-box;
+    background-color: rgb(39, 39, 39);
+  }
+  
+  .divForm > form > button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .green-line {
+    width: 29em; /* Ancho de la línea */
+    height: 3px; /* Grosor de la línea */
+    background-color: rgb(42, 216, 79); /* Color de la línea (verde) */
+    margin-bottom: 10px; /* Espacio entre la línea y el párrafo */
+  }
