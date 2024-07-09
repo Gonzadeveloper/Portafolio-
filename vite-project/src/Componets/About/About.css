@@ -5,9 +5,11 @@
 }
 
 .containerAbout img {
-    width: auto;
-    height: 19em;
+    width: 35em;
+    height: 33em;
     margin-right: 2em;
+    object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
+    object-position: center; /* Posición centrada de la imagen dentro del contenedor */
 }
 
 .tabs-container {
@@ -46,3 +48,21 @@
   p, button, h3, h2 {
     color: white;
   }
+
+  .skills-list {
+    display: flex;
+}
+
+.skills-columns {
+    flex: 1; /* Para que cada columna ocupe el mismo espacio */
+    padding: 0 1em; /* Espacio entre las columnas */
+}
+
+/* Estilos opcionales para mejorar la apariencia */
+.skills-columns li {
+    margin-bottom: 0.5em;
+}
+
+.tab-content li{
+  color: grey;
+}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css'; // Asegúrate de importar correctamente tu archivo CSS
+import avatar from "../../assets/avatar.jpg"
 
 function Home() {
   const textos = ["Gonzalo", "Desarrollador web full stack"];
@@ -30,7 +31,7 @@ function Home() {
         </div>
       </div>
       <div className='div2'>
-        <img src="https://previews.123rf.com/images/saripuddin/saripuddin2108/saripuddin210800027/173704134-ilustraci%C3%B3n-del-logo-de-la-mascota-cool-man-para-perfil-de-esport-o-avatar.jpg" alt="" />
+        <img src={avatar} alt="" />
       </div>
     </div>
   );

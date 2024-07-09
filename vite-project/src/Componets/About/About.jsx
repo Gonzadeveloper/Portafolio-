@@ -12,13 +12,13 @@ function About (){
     return (
         <div className="container containerAbout" id="About">
             <div>
-                <img src="https://awerty.net/wp-content/uploads/2022/10/ventajas-seguridad-escritorio-virtual.png" alt="" />
+                <img src="https://png.pngtree.com/thumb_back/fw800/background/20230720/pngtree-d-rendering-of-a-futuristic-office-with-green-wall-plants-and-image_3721525.jpg" alt="" />
             </div>
             <div>
 
                 <h3>Sobre mi</h3>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, culpa sed laboriosam asperiores labore voluptate mollitia. Voluptatibus distinctio ipsa perspiciatis magni quibusdam ea dignissimos. Quos quod aliquid ut illum placeat.</p>
+                <p>Soy desarrollador Full Stack, apasionado por la tecnología, los videojuegos y la música. Mi naturaleza curiosa y mi constante deseo de aprender me han llevado a explorar el apasionante campo de la tecnología de la información. Sin duda, una de las experiencias más motivadoras fue mi acercamiento al código. Siempre estoy buscando formas de mejorar y aprender más sobre las últimas tecnologías y tendencias en el mundo del desarrollo web. Mi principal objetivo es impactar al mundo con código.</p>
            
 
                 <div className="tabs-container">
@@ -44,15 +44,27 @@ function About (){
                     </div>
                     <div className="tab-content">
                         {activeTab === 'skills' && (
-                        <div>
-                            <h2>Skills</h2>
-                            <p>Aquí va la información sobre skills.</p>
-                        </div>
+                         <div className="skills-list">
+                         <ul className="skills-columns">
+                             <li>JavaScript</li>
+                             <li>React</li>
+                             <li>Node.js</li>
+                             <li>Redux</li>
+                             <li>SQL</li>
+                             <li>Express</li>
+                         </ul>
+                         <ul className="skills-columns">
+                             <li>Vite</li>
+                             <li>GIT</li>
+                             <li>TypeScript</li>
+                             <li>Next.js</li>
+                         </ul>
+                     </div>
                         )}
                         {activeTab === 'education' && (
                         <div>
-                            <h2>Education</h2>
-                            <p>Aquí va la información sobre education.</p>
+                            <li>Full Stack, Henry</li>
+                            <li>Lic. Comunicación social</li>
                         </div>
                         )}
                         {activeTab === 'certifications' && (

@@ -50,3 +50,12 @@
     background-color: rgb(42, 216, 79); /* Color de la línea (verde) */
     margin-bottom: 10px; /* Espacio entre la línea y el párrafo */
   }
+
+
+  
+  .divContact .IconosContact img{
+    width: 3em;
+    background-color: rgb(68, 68, 68);
+    border-radius: 0.7em;
+    margin-right: 1em;
+  }

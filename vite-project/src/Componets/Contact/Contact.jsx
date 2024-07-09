@@ -1,3 +1,5 @@
+import IconGitHub from "../../assets/github.png";
+import IconLinkedin from "../../assets/linkedin1.png"
 import "./Contact.css"
 
 function Contact (){
@@ -6,7 +8,15 @@ function Contact (){
             <div>
                 <h3>Hagamos conexión </h3>
                 <div className="green-line"></div>
-                <p>Ey llegaste hasta aqui, que esperas para darme  mas detalles sobre tu proyecto. Seguro puedo ayudarte a potenciar esa idea. Te dejo algunos de los canales para que acerques tu propuesta</p>
+                <p>Hey, llegaste hasta aquí, ¿qué esperas para darme más detalles sobre tu proyecto? Seguro puedo ayudarte a potenciar esa idea. Te dejo algunos de los canales para que acerques tu propuesta.</p>
+                <div>
+                    <a href="https://github.com/Gonzadeveloper" className="IconosContact">
+                        <img src={IconGitHub} alt="Descripción de la imagen"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gonzalo-cayssials-610bb5254/" className="IconosContact">
+                        <img src={IconLinkedin} alt="Descripción de la imagen"/>
+                    </a>
+                </div>
             </div>
 
             <div className="divForm">

@@ -2,7 +2,7 @@
     {
       "id": 1,
       "nombre": "Chat IA",
-      "descripcion": "este es un proyecto donde podras usar chat IA local con el modelo llama 3",
+      "descripcion": "Este es un proyecto donde podras usar chat IA local con el modelo llama 3",
       "img":"https://www.javascript100.dev/projects/04.webp",
       "linkGit": "https://github.com/Gonzadeveloper/Chat-IA-local",
       "linkDeploy":"https://chat-ia-local.vercel.app/",
