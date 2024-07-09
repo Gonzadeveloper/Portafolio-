@@ -14,6 +14,19 @@ function Home() {
     return () => clearInterval(interval);
   }, []); // Este efecto se ejecutará solo una vez al montar el componente
 
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('Contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleDownloadClick = () => {
+    // Aquí puedes definir la lógica para el botón de descarga del CV
+    // Por ejemplo, puedes redirigir a una URL específica para la descarga
+    window.location.href = 'https://drive.google.com/file/d/1aHPrHLnMbQ7NsO4XUYshH0W2L9W_drHa/view?usp=drive_link';
+  };
+
   return (
     <div className='container containerHome' id='Home'>
       <div className='div1'>
@@ -24,9 +37,14 @@ function Home() {
         <div>
           <p className='TextoHomep'>Apasionado por la tecnologia, la musica, los videojuegos y las motos.</p>
 
-          <button className='botonesHome1'><span>Contactame</span></button>
+          
+           
+          {/* Botón de contacto */}
+          <button className="botonesHome1" onClick={() => scrollToContact()}><span>Contactame</span></button>
 
-          <button className='botonesHome2'><span>Descarga mi CV</span></button>
+
+            {/* Segundo botón */}
+            <button className='botonesHome2' onClick={handleDownloadClick}><span>Descarga mi CV</span></button>
 
         </div>
       </div>

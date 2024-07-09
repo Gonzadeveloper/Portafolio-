@@ -69,8 +69,15 @@ function About (){
                         )}
                         {activeTab === 'certifications' && (
                         <div>
-                            <h2>Certifications</h2>
-                            <p>Aquí va la información sobre certifications.</p>
+                            <ul>
+                                <li>
+                                    <a href="d2rf2c6bvm78n9.cloudfront.net/new-cert?id=04efae9801215f6765c9c966ad493509922b772a90d2515041fa4ecc14f3f77d">Full Stack, Henry</a>
+                                    
+                                </li>
+                                <li>
+                                <a href="https://cert.efset.org/RGUthW">English A2, Efset</a>
+                                </li>
+                            </ul>
                         </div>
                         )}
                     </div>

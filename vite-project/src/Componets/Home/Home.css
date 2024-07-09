@@ -97,7 +97,7 @@
     border-radius: 45em;
   }
 
-  .botonesHome1{
+  .containerHome .botonesHome1{
     border-radius: 2em;
     background-color: rgb(42, 216, 79);
     border: none;
