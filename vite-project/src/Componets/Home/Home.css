@@ -1,131 +1,189 @@
+/* Home.css */
 /* Contenedor principal */
 .texto-animated {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-  }
-  .texto-cambiar1{
-    color: rgb(42, 216, 79);
-    font-size: 7em;
-    font-weight: 500;
-  }
-  
-  .texto-cambiar{
-    font-size: 5em;
-    color: white;
-    font-weight: 500;
-  }
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.texto-cambiar1 {
+  color: rgb(42, 216, 79);
+  font-size: 7em;
+  font-weight: 500;
+}
 
-  .TextoHomep{
-    font-size: 1.5em;
-    color: grey;
-  }
+.texto-cambiar {
+  font-size: 5em;
+  color: white;
+  font-weight: 500;
+}
 
+.TextoHomep {
+  font-size: 1.5em;
+  color: grey;
+}
 
-  /* Pseudo-elemento para el efecto de barrido */
-  .texto-animated::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    transform-origin: right;
-    animation: barrido 1s forwards;
-  }
-  
-  /* Animación de barrido */
-  @keyframes barrido {
-    0% {
+/* Pseudo-elemento para el efecto de barrido */
+.texto-animated::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: right;
+  animation: barrido 1s forwards;
+}
+
+/* Animación de barrido */
+@keyframes barrido {
+  0% {
       transform: scaleX(0); /* Comienza con la barra invisible */
-    }
-    100% {
+  }
+  100% {
       transform: scaleX(1); /* Barra se extiende a lo largo del texto */
-    }
   }
-  
-  /* Estilo para el texto dinámico */
-  .texto-animated span {
-    position: relative; /* Asegura que el texto está por encima de la barra */
-    z-index: 2;
-  }
-  
-  /* Estilos para el texto que cambia */
-  .texto-dinamico {
-    position: absolute;
-    left: 0;
-    top: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    opacity: 0; /* Empieza invisible */
-  }
-  
-  /* Animación de escribir y borrar */
-  .texto-dinamico.animar {
-    animation: escribir 4s steps(40, end), borrar 2s steps(40, start) 4s;
-  }
-  
-  @keyframes escribir {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes borrar {
-    from {
-      width: 100%;
-    }
-    to {
-      width: 0;
-    }
-  }
+}
 
-  .containerHome{
-    display: flex;
-    justify-content: space-between;
-    height: 32em;
-    margin-bottom: 9em;
+/* Estilo para el texto dinámico */
+.texto-animated span {
+  position: relative; /* Asegura que el texto está por encima de la barra */
+  z-index: 2;
+}
+
+/* Estilos para el texto que cambia */
+.texto-dinamico {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0; /* Empieza invisible */
+}
+
+/* Animación de escribir y borrar */
+.texto-dinamico.animar {
+  animation: escribir 4s steps(40, end), borrar 2s steps(40, start) 4s;
+}
+
+@keyframes escribir {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
+
+@keyframes borrar {
+  from {
+      width: 100%;
+  }
+  to {
+      width: 0;
+  }
+}
+
+.containerHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32em;
+  margin-bottom: 9em;
+}
+
+.containerHome img {
+  width: auto;
+  height: 20em;
+  border: solid 2px rgb(42, 216, 79);
+  border-radius: 45em;
+  margin-left: 5em;
+}
+
+.containerHome .botonesHome1 {
+  border-radius: 2em;
+  background-color: rgb(42, 216, 79);
+  border: none;
+  width: 12em;
+  height: 3em;
+  margin-right: 1em;
+}
+
+.botonesHome1 span {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.botonesHome2 {
+  background-color: transparent;
+  border: 0.3em solid rgb(42, 216, 79);
+  border-radius: 2em;
+  width: 12em;
+  height: 3em;
+}
+
+.botonesHome2 span {
+  color: white;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .containerHome {
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 4em;
   }
 
   .containerHome img {
-    width: auto;
-    height: 20em;
-    border: solid 2px rgb(42, 216, 79);
-    border-radius: 45em;
-    margin-left: 5em;
+      height: auto;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 1em;
+      border-radius: 50%;
   }
 
-  .containerHome .botonesHome1{
-    border-radius: 2em;
-    background-color: rgb(42, 216, 79);
-    border: none;
-    width: 11em;
-    height: 3em;
-    margin-right: 1em;
+  .texto-cambiar1 {
+      font-size: 3em;
   }
 
-  .botonesHome1 span {
-    color: white;
-    font-size: 1.3em;
-    font-weight: 500;
+  .texto-cambiar {
+      font-size: 2em;
   }
 
-  .botonesHome2{
-    background-color: transparent;
-    border: 0.3em solid rgb(42, 216, 79);
-    border-radius: 2em;
-    width: 11em;
-    height: 3em;
+  .TextoHomep {
+      font-size: 1.2em;
   }
 
-  .botonesHome2 span{
-    color: white;
-    font-size: 1.3em;
-    font-weight: 500;
+  .containerHome .botonesHome1,
+  .botonesHome2 {
+      width: 100%;
+      margin-bottom: 1em;
   }
 
+  .botonesHome1 span,
+  .botonesHome2 span {
+      font-size: 1em;
+  }
+}
 
+/* About.css */
+.containerAbout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+}
 
+.containerAbout img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .containerAbout {
+      flex-direction: column;
+  }
+}
