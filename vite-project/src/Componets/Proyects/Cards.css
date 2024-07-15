@@ -8,6 +8,8 @@
   background-color: transparent;
   height: 19em;
   margin-top: 2em;
+  margin: auto; /*centra las cards*/
+  margin-bottom: 1.5em;
 }
 
 
@@ -82,7 +84,8 @@
   }
 
   .green-lineCard{
-    width: 70em; /* Acho de la línea */
+    width: 70%; /* Acho de la línea */
+    margin: auto; /*centra la línea*/
     height: 1px; /* Grosor de la línea */
     background-color: rgb(42, 216, 79); /* Color de la línea (verde) */
     margin-bottom: 10px; /* Espacio entre la línea y el párrafo */

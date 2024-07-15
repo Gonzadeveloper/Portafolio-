@@ -43,9 +43,9 @@ function Cards() {
     <div className="cards-container" >
     <h1 id='Proyects'>Proyectos</h1>
       <div className="green-lineCard"></div>
-      <div className="row">
+      <div className="row justify-content-center">
         {ProyectosData.map((proyecto) => (
-          <div key={proyecto.id} className="col-lg-4 col-md-6 mb-4">
+          <div key={proyecto.id} className="col-lg-4 col-md-6 col-12 mb-4"> {/* Usa col-12 para móviles */}
             <div className="card" style={{ maxWidth: '23rem' }}>
               <img src={proyecto.img} className="card-img-top img-hover-effect" alt="..." />
               <div className="card-body">
