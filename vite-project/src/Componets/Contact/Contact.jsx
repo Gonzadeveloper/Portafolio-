@@ -1,8 +1,31 @@
+import { useState } from "react";
 import IconGitHub from "../../assets/github.png";
 import IconLinkedin from "../../assets/linkedin1.png";
 import "./Contact.css";
 
 function Contact() {
+
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await axios.post('http://localhost:3001/send-email', {
+            email,
+            subject,
+            message
+        });
+
+        alert('Email enviado con éxito');
+    } catch (error) {
+        console.error('Error al enviar el email', error);
+        alert('Error al enviar el email');
+    }
+};
+
   return (
     <div className="container divContact" id="Contact">
       <div className="row">
@@ -24,14 +47,14 @@ function Contact() {
         </div>
 
         <div className="col-12 col-md-6 divForm">
-          <form action="" method="post">
+          <form onSubmit={handleSubmit}>
             <h3>Tu Email</h3>
-            <input type="text" placeholder="tuemail@gmail.com" />
+            <input value={email} type="text" placeholder="tuemail@gmail.com" onChange={(e) => setEmail(e.target.value)} />
             <h3>Asunto</h3>
-            <input type="text" placeholder="Solo di hola" />
+            <input value={subject} type="text" placeholder="Solo di hola"  onChange={(e) => setEmail(e.target.value)} />
             <h3>Mensaje</h3>
-            <textarea name="" id="" placeholder="tu mensaje ...."></textarea>
-            <button>Enviar</button>
+            <textarea value={message} name="" id="" placeholder="tu mensaje ...." onChange={(e) => setEmail(e.target.value)} ></textarea>
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </div>
