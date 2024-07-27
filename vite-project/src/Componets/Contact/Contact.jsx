@@ -14,7 +14,7 @@ function Contact() {
     e.preventDefault();
 
     try {
-        const response = await axios.post('http://localhost:3001/send-email', {
+        const response = await axios.post(`${import.meta.env.VITE_ENDPOINT}/send-email`, {
             email,
             subject,
             message
