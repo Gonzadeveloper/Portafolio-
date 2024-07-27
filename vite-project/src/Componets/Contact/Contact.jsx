@@ -1,6 +1,7 @@
 import { useState } from "react";
 import IconGitHub from "../../assets/github.png";
 import IconLinkedin from "../../assets/linkedin1.png";
+import axios from 'axios'
 import "./Contact.css";
 
 function Contact() {
@@ -51,9 +52,9 @@ function Contact() {
             <h3>Tu Email</h3>
             <input value={email} type="text" placeholder="tuemail@gmail.com" onChange={(e) => setEmail(e.target.value)} />
             <h3>Asunto</h3>
-            <input value={subject} type="text" placeholder="Solo di hola"  onChange={(e) => setEmail(e.target.value)} />
+            <input value={subject} type="text" placeholder="Solo di hola"  onChange={(e) => setSubject(e.target.value)} />
             <h3>Mensaje</h3>
-            <textarea value={message} name="" id="" placeholder="tu mensaje ...." onChange={(e) => setEmail(e.target.value)} ></textarea>
+            <textarea value={message} name="" id="" placeholder="tu mensaje ...." onChange={(e) => setMessage(e.target.value)} ></textarea>
             <button type="submit">Enviar</button>
           </form>
         </div>
