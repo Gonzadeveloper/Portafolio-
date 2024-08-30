@@ -23,7 +23,7 @@
       "descripcion": "En esta app vas a poder ver todos los pilotos de la F1 y ademas crear nuevos!",
       "img": "https://drive.google.com/file/d/1LNhrSEenBrUvRu3PhybmaKnbptP6SfnT/view?usp=drive_link",
       "linkGit": "https://github.com/Gonzadeveloper/PI-drivers",
-      "linkDeploy":"https://pi-drivers-two.vercel.app/",
+      "linkDeploy":"https://pi-drivers-front.vercel.app/",
       "linkYoutube":""
     }
   ]

@@ -4,7 +4,10 @@ import IconLinkedin from "../../assets/linkedin1.png";
 import axios from 'axios'
 import "./Contact.css";
 
+
 function Contact() {
+
+
 
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
