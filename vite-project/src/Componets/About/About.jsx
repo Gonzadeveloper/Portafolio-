@@ -110,7 +110,7 @@ function About() {
           />
         </div>
         <div className="col-12 col-md-6">
-          <h3>Sobre mí</h3>
+          <h3 className='h3personzalizado'>Sobre mí</h3>
           <p>
             Soy desarrollador Full Stack, apasionado por la tecnología, los videojuegos y la música. Mi naturaleza
             curiosa y mi constante deseo de aprender me han llevado a explorar el apasionante campo de la tecnología
@@ -124,19 +124,19 @@ function About() {
                 className={`tab-btn ${activeTab === 'skills' ? 'active' : ''}`}
                 onClick={() => handleTabClick('skills')}
               >
-                Skills
+                <h5>Skills</h5>
               </button>
               <button
                 className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
                 onClick={() => handleTabClick('education')}
               >
-                Education
+                <h5>Education</h5>
               </button>
               <button
                 className={`tab-btn ${activeTab === 'certifications' ? 'active' : ''}`}
                 onClick={() => handleTabClick('certifications')}
               >
-                Certifications
+                <h5>Certifications</h5>
               </button>
             </div>
             <div className="tab-content">

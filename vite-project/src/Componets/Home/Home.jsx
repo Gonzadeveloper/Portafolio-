@@ -6,6 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Home() {
   const textos = ["Gonzalo", "Desarrollador web full stack"];
   const [indice, setIndice] = useState(0);
+  const [theme, setTheme] = useState('dark'); 
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
+  useEffect(() => {
+    document.body.className = theme === 'light' ? 'light' : '';
+    console.log('Tema actual:', theme);
+    console.log('Clase aplicada al body:', document.body.className);
+  }, [theme]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,6 +38,11 @@ function Home() {
 
   return (
     <div className='container-fluid containerHome' id='Home'>
+
+      <button className="theme-toggle-btn" onClick={toggleTheme}>
+        {theme === 'dark' ? '☀️ Tema Claro' : '🌙 Tema Oscuro'}
+      </button>
+
       <div className='row align-items-center'>
         <div className='col-12 col-md-6'>
           <div className="texto-animated">
@@ -40,7 +56,7 @@ function Home() {
           </div>
         </div>
         <div className='col-12 col-md-6'>
-          <img src={avatar} alt="Avatar" className="img-fluid" />
+          <img src={avatar} alt="Avatar" className="img-fluid1" />
         </div>
       </div>
     </div>

@@ -66,3 +66,15 @@
 .tab-content li{
   color: grey;
 }
+
+body.light   .tab-btn.active::after {
+  background-color: rgb(116, 236, 252); /* Color de la línea */
+}
+
+body.light p, button, h3, h2, h5 {
+  color: rgb(0, 0, 0);
+}  
+
+body.light .h3personzalizado {
+  color: rgb(0, 0, 0);
+}

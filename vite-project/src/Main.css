@@ -1,3 +1,10 @@
-body{
+body {
     background-color: black;
-}
+    color: white;
+  }
+  
+  /* Tema claro */
+  body.light {
+    background-color: white;
+    color: black;
+  }
