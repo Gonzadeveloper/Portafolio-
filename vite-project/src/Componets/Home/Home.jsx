@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 import avatar from "../../assets/avatar.jpg";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { IconDarkMode } from '../Icons/Icons';
 
 function Home() {
   const textos = ["Gonzalo", "Desarrollador web full stack"];
@@ -33,14 +34,14 @@ function Home() {
   };
 
   const handleDownloadClick = () => {
-    window.location.href = 'https://drive.google.com/file/d/1B3eKiIC0qj8gcfrZ_eVrZwERKY16-Rle/view?usp=drive_link';
+    window.location.href = 'https://drive.google.com/file/d/11TvtwBzNfWO5ESCoXeap5Vqq58w2RoV5/view?usp=sharing';
   };
 
   return (
     <div className='container-fluid containerHome' id='Home'>
 
       <button className="theme-toggle-btn" onClick={toggleTheme}>
-        {theme === 'dark' ? '☀️ Tema Claro' : '🌙 Tema Oscuro'}
+        <IconDarkMode/>
       </button>
 
       <div className='row align-items-center'>
@@ -55,7 +56,7 @@ function Home() {
             <button className='botonesHome2' onClick={handleDownloadClick}><span>Descarga mi CV</span></button>
           </div>
         </div>
-        <div className='col-12 col-md-6'>
+        <div className='divImg col-12 col-md-6'>
           <img src={avatar} alt="Avatar" className="img-fluid1" />
         </div>
       </div>

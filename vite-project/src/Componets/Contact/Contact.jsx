@@ -1,14 +1,10 @@
 import { useState } from "react";
-import IconGitHub from "../../assets/github.png";
-import IconLinkedin from "../../assets/linkedin1.png";
+import { IconLinkedin, IconGit } from "../Icons/Icons";
 import axios from 'axios'
 import "./Contact.css";
 
 
 function Contact() {
-
-
-
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
@@ -40,13 +36,17 @@ function Contact() {
             Hey, llegaste hasta aquí, ¿qué esperas para darme más detalles sobre tu proyecto? Seguro puedo ayudarte a
             potenciar esa idea. Te dejo algunos de los canales para que acerques tu propuesta.
           </p>
-          <div>
-            <a href="https://github.com/Gonzadeveloper" className="IconosContact">
-              <img src={IconGitHub} alt="GitHub" />
-            </a>
-            <a href="https://www.linkedin.com/in/gonzalo-cayssials-610bb5254/" className="IconosContact">
-              <img src={IconLinkedin} alt="LinkedIn" />
-            </a>
+          <div className="contendorIconos">
+            <div className="divIcono">
+              <a href="https://github.com/Gonzadeveloper" className="IconosContact">
+                <IconGit />
+              </a>
+            </div>
+            <div className="divIcono">
+              <a href="https://www.linkedin.com/in/gonzalo-cayssials-610bb5254/" className="IconosContact">
+                <IconLinkedin />
+              </a>
+            </div>
           </div>
         </div>
 

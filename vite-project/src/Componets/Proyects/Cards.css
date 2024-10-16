@@ -12,22 +12,6 @@
   margin-bottom: 1.5em;
 }
 
-
-.IconGA{
-  border: solid 1px;
-  width: 14em;
-  height: 3em;
-  align-content: center;
-}
-
-.IconL{
-  border: solid rgb(42, 216, 79);
-  width: 14em;
-  height: 3em;
-  align-content: center; 
-}
-
-
 .img-hover-effect {
   transition: transform 0.3s ease;
 }
@@ -39,10 +23,6 @@
 .cards-container .card .card-body{
   background-color: rgb(39, 39, 39);
   border-radius: 0.5em;
-}
-
-.icono-btn{
-    width: 1.7em;
 }
 
 .cards-container .card .btn {
@@ -94,4 +74,29 @@
 
   .cards-container .card .card-title{
     color: rgb(2, 204, 86);
+  }
+
+  body.light .cards-container .card .card-title{
+    color: rgb(116, 236, 252);
+  }
+
+  body.light .green-lineCard{
+    background-color: rgb(116, 236, 252); /* Color de la línea (verde) */
+  }
+
+  body.light .IconL{
+    border: solid rgb(116, 236, 252);
+  }
+  
+  body.light .cards-container .card a {
+    border: solid 1px rgb(116, 236, 252);
+  }
+
+
+  body.light .cards-container .card .card-body{
+    background-color: rgb(196, 196, 196);
+  }
+
+  body.light .cards-container .card a:hover {
+    background-color:rgb(116, 236, 252); /* Color de fondo cuando se pasa el cursor */
   }

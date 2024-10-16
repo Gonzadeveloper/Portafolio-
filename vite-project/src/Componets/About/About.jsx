@@ -109,7 +109,7 @@ function About() {
             className="img-fluid"
           />
         </div>
-        <div className="col-12 col-md-6">
+        <div className="divSobremi col-12 col-md-6">
           <h3 className='h3personzalizado'>Sobre mí</h3>
           <p>
             Soy desarrollador Full Stack, apasionado por la tecnología, los videojuegos y la música. Mi naturaleza
@@ -124,19 +124,19 @@ function About() {
                 className={`tab-btn ${activeTab === 'skills' ? 'active' : ''}`}
                 onClick={() => handleTabClick('skills')}
               >
-                <h5>Skills</h5>
+                <h5 className='h5rebelde'>Skills</h5>
               </button>
               <button
                 className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
                 onClick={() => handleTabClick('education')}
               >
-                <h5>Education</h5>
+                <h5 className='h5rebelde'>Education</h5>
               </button>
               <button
                 className={`tab-btn ${activeTab === 'certifications' ? 'active' : ''}`}
                 onClick={() => handleTabClick('certifications')}
               >
-                <h5>Certifications</h5>
+                <h5 className='h5rebelde'>Certifications</h5>
               </button>
             </div>
             <div className="tab-content">

@@ -9,11 +9,15 @@
   margin: 1em 0;
 }
 
-.IconosContact img {
-  width: 40px;
-  height: 40px;
-  margin-right: 1em;
-  background-color: rgb(39, 39, 39);
+.contendorIconos{
+  display: flex;
+}
+
+.divIcono{
+  margin: 0.2em;
+  background-color:rgb(39, 39, 39);
+  width: 2.6em;
+  border-radius: 0.5em;
 }
 
 .divForm {
@@ -55,4 +59,34 @@ textarea {
 
 textarea {
   resize: none;
+}
+
+body.light .green-line {
+  background-color: rgb(116, 236, 252)
+}
+
+body.light .IconosContact {
+  background-color: rgb(255, 255, 255)
+}
+
+body.light h3 {
+  color: black;
+}
+
+body.light 
+textarea {
+  background-color: rgb(196, 196, 196);
+}
+
+body.light 
+input {
+  background-color: rgb(196, 196, 196);
+}
+
+body.light .divIcono1{
+  background-color:rgb(255, 255, 255);
+}
+
+body.light .divIcono{
+  background-color:rgb(255, 255, 255);
 }

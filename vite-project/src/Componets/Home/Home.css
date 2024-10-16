@@ -1,86 +1,26 @@
-/* Home.css */
-/* Contenedor principal */
-.texto-animated {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-}
-.texto-cambiar1 {
-  color: rgb(42, 216, 79);
-  font-size: 7em;
+.texto-cambiar1, .texto-cambiar {
   font-weight: 500;
 }
 
+.texto-cambiar1 {
+  color: rgb(42, 216, 79);
+  font-size: 7em;
+}
+
 .texto-cambiar {
-  font-size: 5em;
   color: white;
-  font-weight: 500;
+  font-size: 5em;
+}
+
+.texto-animated {
+  display: inline-block; /* Mantener el contenedor en línea con otros elementos */
+  min-width: 60em; /* Ajustar este valor según el texto más largo */
+  min-height: 26em;
 }
 
 .TextoHomep {
   font-size: 1.5em;
   color: grey;
-}
-
-/* Pseudo-elemento para el efecto de barrido */
-.texto-animated::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: right;
-  animation: barrido 1s forwards;
-}
-
-/* Animación de barrido */
-@keyframes barrido {
-  0% {
-      transform: scaleX(0); /* Comienza con la barra invisible */
-  }
-  100% {
-      transform: scaleX(1); /* Barra se extiende a lo largo del texto */
-  }
-}
-
-/* Estilo para el texto dinámico */
-.texto-animated span {
-  position: relative; /* Asegura que el texto está por encima de la barra */
-  z-index: 2;
-}
-
-/* Estilos para el texto que cambia */
-.texto-dinamico {
-  position: absolute;
-  left: 0;
-  top: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  opacity: 0; /* Empieza invisible */
-}
-
-/* Animación de escribir y borrar */
-.texto-dinamico.animar {
-  animation: escribir 4s steps(40, end), borrar 2s steps(40, start) 4s;
-}
-
-@keyframes escribir {
-  from {
-      width: 0;
-  }
-  to {
-      width: 100%;
-  }
-}
-
-@keyframes borrar {
-  from {
-      width: 100%;
-  }
-  to {
-      width: 0;
-  }
 }
 
 .containerHome {
@@ -92,42 +32,41 @@
 }
 
 .containerHome img {
-  width: auto;
   height: 20em;
-  border: solid 2px rgb(42, 216, 79);
+  border: 2px solid rgb(42, 216, 79);
   border-radius: 45em;
   margin-left: 5em;
 }
 
-.containerHome .botonesHome1 {
+.botonesHome1, .botonesHome2 {
   border-radius: 2em;
-  background-color: rgb(42, 216, 79);
-  border: none;
   width: 12em;
   height: 3em;
-  margin-right: 1em;
-}
-
-.botonesHome1 span {
-  color: white;
   font-size: 1.3em;
   font-weight: 500;
+  margin: 0.25em;
+}
+
+.botonesHome1 {
+  background-color: rgb(42, 216, 79);
+  border: none;
+  color: white;
 }
 
 .botonesHome2 {
   background-color: transparent;
   border: 0.3em solid rgb(42, 216, 79);
-  border-radius: 2em;
-  width: 12em;
-  height: 3em;
-}
-
-.botonesHome2 span {
   color: white;
-  font-size: 1.3em;
-  font-weight: 500;
 }
 
+.h5rebelde{
+  color: white;
+}
+
+.divImg{
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -137,6 +76,11 @@
     margin-bottom: 4em;
   }
   
+  .texto-animated {
+    min-height: 10em; /* Reducir la altura mínima para pantallas pequeñas */
+    min-width: auto; /* Permitir que el ancho se ajuste dinámicamente en pantallas pequeñas */
+  }
+
   .containerHome img {
     height: auto;
     width: 100%;
@@ -169,55 +113,35 @@
     }
 }
 
-/* About.css */
-.containerAbout {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 4em;
-}
-
-.containerAbout img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .containerAbout {
-    flex-direction: column;
-  }
-}
-
-/*Estilos boton*/
-
 /* Botón de cambio de tema */
 .theme-toggle-btn {
   position: absolute;
-  width: 90px;
+  width: 70px;
+  height: 70px;
   top: 110px;
   right: 20px;
   border-radius: 999px;
-  background-color: #4CAF50; /* Verde por defecto */
-  color: white;
+  background-color: #ffffff; /* Verde por defecto */
   border: none;
-  padding: 10px 20px;
   cursor: pointer;
   z-index: 999; /* Asegura que esté por encima de otros elementos */
 }
 
 .theme-toggle-btn:hover {
-  background-color: darkgreen;
+  background-color: rgb(131, 131, 131);
+}
+
+body.light .h5rebelde {
+  color: black;
 }
 
 /* Estilo del botón en el tema claro */
 body.light .theme-toggle-btn {
-  background-color: rgb(116, 236, 252); /* color del botón en tema claro */
-  color: white;
+  background-color: rgb(255, 255, 255); /* color del botón en tema claro */
 }
 
 body.light .theme-toggle-btn:hover {
-  background-color: purple;
+  background-color: rgb(107, 107, 107);
 }
 
 body.light .texto-cambiar {
@@ -243,4 +167,17 @@ body.light .botonesHome2{
 body.light .botonesHome2 span,
 body.light .botonesHome1 span{
   color: black;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.texto-animated .texto-cambiar {
+  animation: fadeInOut 4s ease-in-out infinite;
 }
