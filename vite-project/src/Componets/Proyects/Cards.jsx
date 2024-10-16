@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Cards.css";
-import PortadaPF from '../../assets/CaratulasProyectos/Landing-page.jpg'
-import PortadaPI from '../../assets/CaratulasProyectos/PI-drivers-landingPage.png'
+import PortadaPF from '../../assets/CaratulasProyectos/Landing-page.webp'
+import PortadaPI from '../../assets/CaratulasProyectos/PI-drivers-landingPage.webp'
 import PortadaChatIA from '../../assets/CaratulasProyectos/CaratulaIA.webp'
 import { IconGithub, IconYoutube, IconDeploy} from '../Icons/Icons'
 
