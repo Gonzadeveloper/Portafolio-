@@ -12,6 +12,15 @@
   font-size: 5em;
 }
 
+.icon-dark-mode {
+  fill: #ffffff; /* Color negro por defecto */
+}
+
+/* Estilo para tema oscuro */
+body.light .icon-dark-mode {
+  fill: #000000; /* Color blanco para el modo oscuro */
+}
+
 .texto-animated {
   display: inline-block; /* Mantener el contenedor en línea con otros elementos */
   min-width: 60em; /* Ajustar este valor según el texto más largo */
@@ -121,7 +130,7 @@
   top: 110px;
   right: 20px;
   border-radius: 999px;
-  background-color: #ffffff; /* Verde por defecto */
+  background-color: #000000; /* Verde por defecto */
   border: none;
   cursor: pointer;
   z-index: 999; /* Asegura que esté por encima de otros elementos */

@@ -4,8 +4,33 @@
     margin-bottom: 9em;
 }
 
+.socketIoIcon{
+  fill: #ffffff; /* Color blanco para el modo oscuro */
+}
+
+body.light .socketIoIcon {
+  fill: #000000; /* Color blanco para el modo oscuro */
+}
+
+.nextjsIcon{
+  fill: #ffffff; /* Color blanco para el modo oscuro */
+}
+
+body.light .nextjsIcon {
+  fill: #000000; /* Color blanco para el modo oscuro */
+}
+
 .divSobremi{
   min-height: 35em;
+}
+
+.linksA{
+  text-decoration: none;
+  color: grey;
+}
+
+.linksA:hover{
+  color: rgb(42, 216, 79);
 }
 
 .containerAbout img {
@@ -85,4 +110,8 @@ body.light p, button, h3, h2, h5 {
 
 body.light .h3personzalizado {
   color: rgb(0, 0, 0);
+}
+
+body.light .linksA:hover{
+  color: rgb(116, 236, 252);
 }

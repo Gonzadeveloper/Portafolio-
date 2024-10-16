@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Mifoto from '../../assets/1666750518940.webp'
+import { IconReact, IconVite, IconNode, IconNext, IconNest, IconJS, IconGit2, IconTypeScript, IconMongoDB, IconPostgreSQL, IconReactRedux, IconSequelize, IconSocketIo, IconJWT} from '../Icons/Icons'
 import './About.css';
 
 function About() {
@@ -52,18 +53,28 @@ function About() {
               {activeTab === 'skills' && (
                 <div className="skills-list">
                   <ul className="skills-columns">
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Redux</li>
-                    <li>SQL</li>
-                    <li>Express</li>
+                    <li><IconReactRedux/> Redux</li>
+                    <li><IconSequelize/> Sequelize</li>
+                    <li><IconSocketIo /> Socket.io</li>
+                    <li><IconJWT/> JWT</li>
+                    <li>Passport</li>
+                    <li> Express</li>
                   </ul>
                   <ul className="skills-columns">
-                    <li>Vite</li>
-                    <li>GIT</li>
-                    <li>TypeScript</li>
-                    <li>Next.js</li>
+                    <li><IconVite/> Vite</li>
+                    <li><IconReact/> React</li>
+                    <li><IconNode/> Node.js</li>
+                    <li><IconNext/> Next.js </li>
+                    <li> Nest</li>
+                  </ul >
+                  <ul className="skills-columns">
+                    <li><IconJS/> JavaScript</li>
+                    <li><IconGit2/> GIT</li>
+                    <li><IconTypeScript/> TypeScript</li>
+                  </ul>
+                  <ul className="skills-columns">
+                    <li><IconMongoDB/> MongoDB</li>
+                    <li><IconPostgreSQL/> Postgre</li>
                   </ul>
                 </div>
               )}
@@ -77,12 +88,18 @@ function About() {
                 <div>
                   <ul>
                     <li>
-                      <a href="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=04efae9801215f6765c9c966ad493509922b772a90d2515041fa4ecc14f3f77d">
+                      <a className='linksA' href="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=04efae9801215f6765c9c966ad493509922b772a90d2515041fa4ecc14f3f77d" >
                         Full Stack, Henry
                       </a>
                     </li>
                     <li>
-                      <a href="https://cert.efset.org/RGUthW">English A2, Efset</a>
+                      <a className='linksA' href="https://cert.efset.org/RGUthW">English A2, Efset</a>
+                    </li>
+                    <li>
+                      <a className='linksA' href="https://drive.google.com/file/d/1dPSQJd3UMIc8NKux5m5d9HzFI2ozIISD/view?usp=sharing">Testing de sofware QA, Academia QA</a>
+                    </li>
+                    <li>
+                      <a className='linksA' href="https://drive.google.com/file/d/1hHv3W7bV89KvfE-ydlUggX75WIgT5ryV/view?usp=sharing">Principios SQL Server, Academia QA</a>
                     </li>
                   </ul>
                 </div>
