@@ -100,3 +100,7 @@
   body.light .cards-container .card a:hover {
     background-color:rgb(116, 236, 252); /* Color de fondo cuando se pasa el cursor */
   }
+
+  body.light h1{
+    color: black;
+  }

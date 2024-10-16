@@ -3,20 +3,19 @@
 }
  
   /* Estilos para la barra de navegación */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.1); /* Color semitransparente */
-  backdrop-filter: blur(10px); /* Aplica el desenfoque */
-  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-}
+  .navbar {
+    backdrop-filter: blur(10px); /* Aplica el desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
 
 .nav-link1{
   color: #ffffff;

@@ -39,7 +39,7 @@ function Cards() {
 
   return (
     <div className="cards-container" >
-    <h1 id='Proyects'>Proyectos</h1>
+    <h1 id='Proyects' className='proyects1'>Proyectos</h1>
       <div className="green-lineCard"></div>
       <div className="row justify-content-center">
         {ProyectosData.map((proyecto) => (
