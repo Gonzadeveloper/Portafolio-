@@ -15,8 +15,6 @@ function Home() {
 
   useEffect(() => {
     document.body.className = theme === 'light' ? 'light' : '';
-    console.log('Tema actual:', theme);
-    console.log('Clase aplicada al body:', document.body.className);
   }, [theme]);
 
   useEffect(() => {
