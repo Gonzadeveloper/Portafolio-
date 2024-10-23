@@ -1,0 +1,77 @@
+.buttonIA {
+    position: fixed;
+    width: 140px;
+    height: 140px;
+    bottom: 20px;
+    right: 20px; 
+    border-radius: 999px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  .iconRobotIA {
+    fill: #ffffff;
+  }
+  
+  body.light .iconRobotIA {
+    fill: rgb(0, 0, 0);
+  }
+
+  .inputChat {
+    color: black;
+    background-color: transparent;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border: none; /* Elimina bordes predeterminados */
+  }
+  
+
+  .chatWindow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chatHeader {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatBody {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    color: black;
+  }
+
+  .textChat{
+    color: black;
+  }
+  
+  .closeButton {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    color: #ff0000;
+  }
+  

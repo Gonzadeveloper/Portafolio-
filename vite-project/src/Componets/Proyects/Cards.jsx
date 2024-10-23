@@ -31,8 +31,8 @@ function Cards() {
       "nombre": "PI Drivers",
       "descripcion": "En esta app vas a poder ver todos los pilotos de la F1 y ademas crear nuevos!",
       "img": PortadaPI,
-      "linkGit": "https://github.com/Gonzadeveloper/PI-drivers",
-      "linkDeploy":"https://pi-drivers-two.vercel.app/",
+      "linkGit": "https://github.com/Gonzadeveloper/PI-drivers", 
+      "linkDeploy":"https://pi-drivers-front.vercel.app/",
       "linkYoutube":""
     }
   ]

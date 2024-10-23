@@ -7,11 +7,13 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './Style.css';
 import About from './Componets/About/About';
 import Contact from './Componets/Contact/Contact';
+import IAhchat from './Componets/IA/IAchat';
 
 
 function App() {
   return (
       <div className='container divApp'>
+        <IAhchat/>
         <Navbar/>
         <Home/>
         <About/>

@@ -58,14 +58,14 @@ function About() {
                     <li><IconSocketIo /> Socket.io</li>
                     <li><IconJWT/> JWT</li>
                     <li>Passport</li>
-                    <li> Express</li>
+                    <li>Express</li>
                   </ul>
                   <ul className="skills-columns">
                     <li><IconVite/> Vite</li>
                     <li><IconReact/> React</li>
                     <li><IconNode/> Node.js</li>
                     <li><IconNext/> Next.js </li>
-                    <li> Nest</li>
+                    <li>Nest</li>
                   </ul >
                   <ul className="skills-columns">
                     <li><IconJS/> JavaScript</li>
