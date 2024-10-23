@@ -15,10 +15,6 @@
     fill: #ffffff;
   }
   
-  body.light .iconRobotIA {
-    fill: rgb(0, 0, 0);
-  }
-
   .inputChat {
     color: black;
     background-color: transparent;
@@ -27,14 +23,14 @@
     border: none; /* Elimina bordes predeterminados */
   }
   
-
   .chatWindow {
     position: fixed;
     bottom: 20px;
     right: 20px; 
     width: 300px;
     height: 400px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
+    border: solid 1px gray;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -43,7 +39,7 @@
   }
   
   .chatHeader {
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     padding: 10px;
     border-radius: 10px 10px 0 0;
@@ -58,9 +54,9 @@
     overflow-y: auto;
     color: black;
   }
-
+  
   .textChat{
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   .closeButton {
@@ -75,3 +71,31 @@
     color: #ff0000;
   }
   
+  body.light .iconRobotIA {
+    fill: rgb(0, 0, 0);
+  }
+
+  body.light .chatBody {
+    color: rgb(255, 255, 255);
+  }
+
+  body.light .chatHeader {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+  body.light .textChat{
+    color: rgb(0, 0, 0);
+  }
+
+  body.light .closeButton {
+    color: rgb(0, 0, 0);
+  }
+
+  body.light .chatWindow {
+    background-color: rgb(255, 255, 255);
+  }
+
+  body.light .inputChat {
+    background-color: transparent;
+  }

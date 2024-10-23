@@ -29,11 +29,11 @@ function IAhchat() {
       {isChatOpen && (
         <div className='chatWindow'>
           <div className='chatHeader'>
-            <span>Chat</span>
+            <span>Asistente IA</span>
             <button className='closeButton' onClick={handleCloseChat}>X</button>
           </div>
           <div className='chatBody'>
-            <p className='textChat'>¡Hola! ¿Cómo puedo ayudarte?</p>
+            <p className='textChat'>¡Hola! Pronto vas a poder hacerme preguntas sobre Gonzalo</p>
           </div>
           <div>
             <input className='inputChat' type="text" />
