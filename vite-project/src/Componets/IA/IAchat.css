@@ -23,6 +23,12 @@
     border: none; /* Elimina bordes predeterminados */
   }
   
+  .disabled {
+    pointer-events: none; /* Desactiva el clic en el botón */
+    opacity: 0.6;         /* Cambia la opacidad para que parezca deshabilitado */
+    cursor: not-allowed;   /* Cambia el cursor al pasar sobre el botón */
+  }
+  
   .chatWindow {
     position: fixed;
     bottom: 20px;

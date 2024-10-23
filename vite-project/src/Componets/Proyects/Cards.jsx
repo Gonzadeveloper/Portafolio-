@@ -49,7 +49,15 @@ function Cards() {
               <div className="card-body">
                 <h5 className="card-title">{proyecto.nombre}</h5>
                 <p className="card-text">{proyecto.descripcion}</p>
-                <a href={proyecto.linkYoutube} className="btn btn-light iconY" target="_blank" rel="noopener noreferrer">Youtube <IconYoutube/></a>
+                <a 
+                  href={proyecto.linkYoutube || '#'} 
+                  className={`btn btn-light iconY ${!proyecto.linkYoutube ? 'disabled' : ''}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-disabled={!proyecto.linkYoutube} 
+                >
+                  Youtube <IconYoutube/>
+                </a>
                 <a href={proyecto.linkGit} className="btn btn-light iconG" target="_blank" rel="noopener noreferrer">Github <IconGithub/></a>
                 <a href={proyecto.linkDeploy} className="btn btn-light iconD" target="_blank" rel="noopener noreferrer">Demo <IconDeploy/></a>
               </div>
