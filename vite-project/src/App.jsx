@@ -8,11 +8,13 @@ import './Style.css';
 import About from './Componets/About/About';
 import Contact from './Componets/Contact/Contact';
 import IAhchat from './Componets/IA/IAchat';
+import TitleChange from './Componets/Title/Title';
 
 
 function App() {
   return (
       <div className='container divApp'>
+        <TitleChange/>
         <IAhchat/>
         <Navbar/>
         <Home/>
