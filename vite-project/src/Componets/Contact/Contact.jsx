@@ -17,7 +17,13 @@ function Contact() {
             email,
             subject,
             message
-        });
+        },
+        {
+          headers: {
+              'apikey': import.meta.env.API_KEY 
+            }
+        }
+        );
 
         alert('Email enviado con éxito');
     } catch (error) {
