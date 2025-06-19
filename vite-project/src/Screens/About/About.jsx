@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Mifoto from '../../assets/1666750518940.webp'
-import { IconReact, IconVite, IconNode, IconNext, IconNest, IconJS, IconGit2, IconTypeScript, IconMongoDB, IconPostgreSQL, IconReactRedux, IconSequelize, IconSocketIo, IconJWT} from '../Icons/Icons'
+import { IconReact, IconVite, IconNode, IconNext, IconNest, IconJS, IconGit2, IconTypeScript, IconMongoDB, IconPostgreSQL, IconReactRedux, IconSequelize, IconSocketIo, IconJWT} from '../../Utils/Icons/Icons'
 import './About.css';
 
 function About() {

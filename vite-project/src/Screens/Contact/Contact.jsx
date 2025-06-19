@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { IconLinkedin, IconGit } from "../Icons/Icons";
+import { IconLinkedin, IconGit } from "../../Utils/Icons/Icons";
 import axios from 'axios'
 import "./Contact.css";
 

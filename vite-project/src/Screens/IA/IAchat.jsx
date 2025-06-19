@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { IconRobotIA } from '../Icons/Icons';
+import { IconRobotIA } from '../../Utils/Icons/Icons';
 import './IAchat.css';
 
 function IAhchat() {

@@ -1,7 +1,7 @@
 .containerAbout{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 9em;
+      min-height: 90vh;
 }
 
 .socketIoIcon{

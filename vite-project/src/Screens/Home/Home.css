@@ -12,15 +12,6 @@
   font-size: 5em;
 }
 
-.icon-dark-mode {
-  fill: #ffffff; /* Color negro por defecto */
-}
-
-/* Estilo para tema oscuro */
-body.light .icon-dark-mode {
-  fill: #000000; /* Color blanco para el modo oscuro */
-}
-
 .texto-animated {
   display: inline-block; /* Mantener el contenedor en línea con otros elementos */
   min-width: 60em; /* Ajustar este valor según el texto más largo */
@@ -36,8 +27,7 @@ body.light .icon-dark-mode {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 32em;
-  margin-bottom: 9em;
+  min-height: 80vh;
 }
 
 .containerHome img {
@@ -122,36 +112,11 @@ body.light .icon-dark-mode {
     }
 }
 
-/* Botón de cambio de tema */
-.theme-toggle-btn {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  top: 110px;
-  right: 20px;
-  border-radius: 999px;
-  background-color: #000000; /* Verde por defecto */
-  border: none;
-  cursor: pointer;
-  z-index: 999; /* Asegura que esté por encima de otros elementos */
-}
-
-.theme-toggle-btn:hover {
-  background-color: rgb(131, 131, 131);
-}
 
 body.light .h5rebelde {
   color: black;
 }
 
-/* Estilo del botón en el tema claro */
-body.light .theme-toggle-btn {
-  background-color: rgb(255, 255, 255); /* color del botón en tema claro */
-}
-
-body.light .theme-toggle-btn:hover {
-  background-color: rgb(107, 107, 107);
-}
 
 body.light .texto-cambiar {
   color: rgb(0, 0, 0);

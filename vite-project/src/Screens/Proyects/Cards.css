@@ -2,6 +2,7 @@
     margin: 0.5em;
 }
 
+
 .cards-container .card{
   border: none;
   padding-bottom: 5em ;
@@ -26,10 +27,20 @@
 }
 
 .cards-container .card .btn {
+    border: solid 1px rgb(42, 216, 79);
+    color: rgb(0, 0, 0);
     font-size: 13px;
     margin: 2px;
     width: 99px;
     height: 35px;
+    background-color: rgb(42, 216, 79);
+}
+
+.cards-container .card .link {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  display: block;
 }
 
 .cards-container .card a {
@@ -38,7 +49,7 @@
   }
 
 .cards-container .card a:hover {
-    background-color: rgb(42, 216, 79); /* Color de fondo cuando se pasa el cursor */
+    background-color: rgb(22, 110, 41); /* Color de fondo cuando se pasa el cursor */
     color: black;
   }
 
@@ -54,7 +65,7 @@
   }
 
   .cards-container{
-    margin-bottom: 9em;
+    min-height: 80vh;
   }
 
   .card-img-top {
@@ -71,6 +82,11 @@
     margin-bottom: 10px; /* Espacio entre la línea y el párrafo */
     margin-bottom: 3em;
   }
+
+  body.light .cards-container .card .btn {
+    background-color: rgb(106, 209, 223);
+}
+
 
   .cards-container .card .card-title{
     color: rgb(2, 204, 86);
@@ -98,7 +114,7 @@
   }
 
   body.light .cards-container .card a:hover {
-    background-color:rgb(116, 236, 252); /* Color de fondo cuando se pasa el cursor */
+    background-color:rgb(54, 110, 117); /* Color de fondo cuando se pasa el cursor */
   }
 
   body.light h1{

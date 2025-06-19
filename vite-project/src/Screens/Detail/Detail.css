@@ -1,0 +1,64 @@
+.grid-layout {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.Iconos{
+    height: 10em;
+}
+
+
+.iconYDetail, .iconGDetail, .iconDDetail{
+    width: 8%;
+    height: 10%;
+    border-radius: 8%;
+    padding: 2%;
+    margin: 1%;
+    background-color: rgb(42, 216, 79);
+    border-style: none;
+}
+
+.iconYDetail:hover, .iconGDetail:hover, .iconDDetail:hover{
+    background-color: rgb(18, 90, 33);
+}
+
+.divImgD, .divDescription{
+    margin-left: 20%;
+}
+
+.divImgD Img {
+    max-width: 100%;
+}
+
+.divName , .divLinks{
+    margin-left: 1%;
+}
+
+.divLinks, .divDescription{
+    margin-top: 2%;
+}
+
+.divName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.divName h4 {
+    font-size: 1.3em;
+}
+
+.divName h4 strong {
+    color: gray;
+}
+
+body.light .iconYDetail, body.light .iconGDetail, body.light .iconDDetail{
+    background-color:  rgb(106, 209, 223);
+}
+
+body.light .iconYDetail:hover, body.light .iconGDetail:hover, body.light .iconDDetail:hover{
+    background-color:  rgb(54, 107, 114);
+}
