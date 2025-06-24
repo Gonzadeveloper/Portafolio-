@@ -1,0 +1,35 @@
+.green-lineCard{
+  width: 70%; /* Acho de la línea */
+  margin: auto; /*centra la línea*/
+  height: 1px; /* Grosor de la línea */
+  background-color: rgb(42, 216, 79); /* Color de la línea (verde) */
+  margin-bottom: 10px; /* Espacio entre la línea y el párrafo */
+  margin-bottom: 3em;
+}
+
+.cards-container h1{
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.custom-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 0 1em;
+}
+
+body.light .green-lineCard{
+  background-color: rgb(116, 236, 252); /* Color de la línea (verde) */
+}
+
+body.light h1{
+  color: black;
+}
+
+.cards-container{
+  min-height: 50vh;
+}

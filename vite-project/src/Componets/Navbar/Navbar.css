@@ -1,0 +1,130 @@
+.navbar {
+  position: fixed; /* ← Esto la mantiene fija */
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+  width: 100%;      /* ← Que ocupe todo el ancho */
+  background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro semi-transparente */
+  backdrop-filter: blur(10px);          /* ← Difumina el fondo detrás */
+  -webkit-backdrop-filter: blur(10px);  /* ← Compatibilidad con Safari */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea sutil */
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 1000;     /* Que quede encima de todo */
+}
+
+.linknav{
+  text-decoration: none;
+}
+
+.nav-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1em;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+}
+
+.nav-link:hover,
+.nav-logo:hover {
+  color: rgb(42, 216, 79);
+}
+
+/* Toggle button (hamburger) */
+.nav-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  display: block;
+  position: relative;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.nav-toggle-icon::before {
+  top: -10px;
+}
+
+.nav-toggle-icon::after {
+  top: 10px;
+}
+
+body.light .nav-link:hover,
+body.light .nav-logo:hover {
+  color: rgb(116, 236, 252);
+}
+
+.desktop-only {
+  display: block;
+}
+
+/* Ocultar en mobile */
+.mobile-only {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    padding: 1em;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+}
+

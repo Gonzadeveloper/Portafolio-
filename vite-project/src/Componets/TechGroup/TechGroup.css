@@ -1,0 +1,26 @@
+.tech-group {
+  margin-top: 1em;
+}
+
+.tech-group h4 {
+  color: #f3f3f3;
+  font-weight: 400;
+  margin: 0em;
+}
+
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.tech-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #f5f5f5;
+}
+
+body.light .tech-group h4 {
+  color: black;
+}

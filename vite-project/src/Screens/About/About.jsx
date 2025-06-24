@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Mifoto from '../../assets/1666750518940.webp'
-import { IconReact, IconVite, IconNode, IconNext, IconNest, IconJS, IconGit2, IconTypeScript, IconMongoDB, IconPostgreSQL, IconReactRedux, IconSequelize, IconSocketIo, IconJWT} from '../../Utils/Icons/Icons'
+import { IconReact, IconVite, IconNode, IconNext, IconJS, IconGit2, IconTypeScript, IconMongoDB, IconPostgreSQL, IconReactRedux, IconSequelize, IconSocketIo, IconJWT, IconPython} from '../../Utils/Icons/Icons'
 import './About.css';
 
 function About() {
@@ -11,15 +11,15 @@ function About() {
   };
 
   return (
-    <div className="container containerAbout" id="About">
-      <div className="row align-items-center">
-        <div className="col-12 col-md-6">
+    <div className="containerAbout" id="About">
+      <div className="rowAbout">
+        <div className="colAbout2">
           <img
             src={Mifoto}
-            className="img-fluid"
+            className="imgAbout"
           />
         </div>
-        <div className="divSobremi col-12 col-md-6">
+        <div className="divSobremi colAbout">
           <h3 className='h3personzalizado'>Sobre mí</h3>
           <p>
             Soy desarrollador Full Stack, apasionado por la tecnología, los videojuegos y la música. Mi naturaleza
@@ -40,13 +40,13 @@ function About() {
                 className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
                 onClick={() => handleTabClick('education')}
               >
-                <h5 className='h5rebelde'>Education</h5>
+                <h5 className='h5rebelde'>Educacion</h5>
               </button>
               <button
                 className={`tab-btn ${activeTab === 'certifications' ? 'active' : ''}`}
                 onClick={() => handleTabClick('certifications')}
               >
-                <h5 className='h5rebelde'>Certifications</h5>
+                <h5 className='h5rebelde'>Certificados</h5>
               </button>
             </div>
             <div className="tab-content">
@@ -68,6 +68,7 @@ function About() {
                     <li>Nest</li>
                   </ul >
                   <ul className="skills-columns">
+                    <li><IconPython/> Python</li>
                     <li><IconJS/> JavaScript</li>
                     <li><IconGit2/> GIT</li>
                     <li><IconTypeScript/> TypeScript</li>

@@ -4,12 +4,26 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   padding: 1rem;
+  margin-left: 10%;
 }
 
 .Iconos{
     height: 10em;
 }
 
+.divDescription h5{
+    font-weight: 400;
+}
+
+.detallesh4{
+    font-weight: 400;
+}
+
+.divImgD img{
+    object-fit: cover;
+    width: 100%;
+    height: 28em;
+}
 
 .iconYDetail, .iconGDetail, .iconDDetail{
     width: 8%;
@@ -27,6 +41,10 @@
 
 .divImgD, .divDescription{
     margin-left: 20%;
+}
+
+.divLinks a svg {
+  vertical-align: middle;
 }
 
 .divImgD Img {
@@ -47,12 +65,23 @@
   justify-content: space-between;
 }
 
+.detallesh4, .techGroup{
+    margin: 0px;
+}
 .divName h4 {
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .divName h4 strong {
     color: gray;
+}
+
+.divName h2 ,.divDescription h5 {
+    color: rgb(250, 250, 250);
+}
+
+body.light .divName h2 ,body.light .divDescription h5 {
+    color: rgb(0, 0, 0);
 }
 
 body.light .iconYDetail, body.light .iconGDetail, body.light .iconDDetail{
@@ -61,4 +90,71 @@ body.light .iconYDetail, body.light .iconGDetail, body.light .iconDDetail{
 
 body.light .iconYDetail:hover, body.light .iconGDetail:hover, body.light .iconDDetail:hover{
     background-color:  rgb(54, 107, 114);
+}
+
+@media (max-width: 768px) {
+  .grid-layout {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .divImgD,
+  .divDescription,
+  .divName,
+  .divLinks {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .divImgD img {
+    margin-top: 4em;
+    width: 100%;
+    height: auto;
+    max-height: 20em;
+    object-fit: contain;
+  }
+
+  .divName h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+
+  .divName h4 {
+    font-size: 1em;
+  }
+
+  .detallesh4 {
+    margin-bottom: 0.5em;
+  }
+
+  .techGroup {
+    margin-bottom: 1em;
+  }
+
+  .divDescription h3 {
+    font-size: 1.3em;
+    margin-top: 1em;
+  }
+
+  .divDescription p {
+    font-size: 1em;
+  }
+
+  .iconYDetail,
+  .iconGDetail,
+  .iconDDetail {
+    width: 2.5em;
+    height: 2.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .divLinks h4 {
+    font-size: 1.1em;
+  }
 }

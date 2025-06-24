@@ -31,10 +31,9 @@
 }
 
 .containerHome img {
-  height: 20em;
+  height: 27em;
   border: 2px solid rgb(42, 216, 79);
   border-radius: 45em;
-  margin-left: 5em;
 }
 
 .botonesHome1, .botonesHome2 {
@@ -67,49 +66,70 @@
   justify-content: flex-end;
 }
 
-/* Responsive Styles */
+.rowHome {
+  display: flex;
+  width: 100%;
+}
+
+.colHome {
+  flex: 1 1 100%;
+  padding: 1rem;
+}
+
 @media (max-width: 768px) {
-  .containerHome {
+  .rowHome {
     flex-direction: column;
-    height: auto;
-    margin-bottom: 4em;
+    align-items: center;
   }
-  
-  .texto-animated {
-    min-height: 10em; /* Reducir la altura mínima para pantallas pequeñas */
-    min-width: auto; /* Permitir que el ancho se ajuste dinámicamente en pantallas pequeñas */
+
+  .colHome {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .divImg {
+    order: 0; /* Imagen abajo del texto */
+    justify-content: center;
+    margin-top: 2em;
+  }
+
+  .colHome:first-child {
+    order: 1;
+    text-align: center;
   }
 
   .containerHome img {
+    width: 80%;
     height: auto;
-    width: 100%;
-    margin-left: 0;
     margin-top: 1em;
     border-radius: 50%;
   }
 
-  .texto-cambiar1 {
-    font-size: 3em;
-  }
-  
-  .texto-cambiar {
-      font-size: 2em;
-  }
-  
-  .TextoHomep {
-      font-size: 1.2em;
+  .texto-animated {
+    min-height: auto;
+    min-width: auto;
+    display: block;
+    min-height: 9em;
   }
 
-  .containerHome .botonesHome1,
-  .botonesHome2 {
-    width: 100%;
-      margin-bottom: 1em;
+  .texto-cambiar1 {
+    font-size: 2.5em;
   }
-  
-  .botonesHome1 span,
-  .botonesHome2 span {
-      font-size: 1em;
-    }
+
+  .texto-cambiar {
+    font-size: 1.8em;
+  }
+
+  .TextoHomep {
+    font-size: 1.1em;
+    margin: 1em 0;
+  }
+
+  .botonesHome1, .botonesHome2 {
+    width: 80%;
+    height: 3em;
+    font-size: 1em;
+  }
 }
 
 

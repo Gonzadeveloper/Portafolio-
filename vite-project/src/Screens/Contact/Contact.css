@@ -1,5 +1,6 @@
 .divContact {
-   min-height: 50vh;
+  margin-top: 14em;
+  min-height: 50vh;
 }
 
 .green-line {
@@ -14,9 +15,12 @@
 }
 
 .divIcono{
+  text-align: center;
+  align-content: center;
   margin: 0.2em;
-  background-color:rgb(39, 39, 39);
-  width: 2.6em;
+  background-color:rgb(255, 255, 255);
+  width: 2.8em;
+  height: 2.8em;
   border-radius: 0.5em;
 }
 
@@ -89,4 +93,20 @@ body.light .divIcono1{
 
 body.light .divIcono{
   background-color:rgb(255, 255, 255);
+}
+
+.rowContact {
+  display: flex;
+  gap: 2em;
+  width: 100%;
+}
+
+.colContact {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .colContact {
+    flex: 1 1 50%;
+  }
 }

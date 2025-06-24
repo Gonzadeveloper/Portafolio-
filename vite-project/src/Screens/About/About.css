@@ -1,7 +1,7 @@
 .containerAbout{
-    display: flex;
-    justify-content: space-between;
-      min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70vh;
 }
 
 .socketIoIcon{
@@ -34,66 +34,70 @@ body.light .nextjsIcon {
 }
 
 .containerAbout img {
-    width: 35em;
-    height: 33em;
-    margin-right: 2em;
-    object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
-    object-position: center; /* Posición centrada de la imagen dentro del contenedor */
+  width: 35em;
+  height: 33em;
+  margin-right: 2em;
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
+  object-position: center; /* Posición centrada de la imagen dentro del contenedor */
 }
 
 .tabs-container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+}
   
-  .tabs {
-    display: flex;
-  }
+.tabs {
+  display: flex;
+}
   
-  .tab-btn {
-    background-color: transparent;
-    position: relative;
-    padding-bottom: 10px; /* Espacio para la línea debajo del texto */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+.tab-btn {
+  background-color: transparent;
+  position: relative;
+  padding-bottom: 10px; /* Espacio para la línea debajo del texto */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
-  .tab-btn.active::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 2px; /* Grosor de la línea */
-      background-color: rgb(42, 216, 79); /* Color de la línea */
-  }
-  
-  .tab-content {
-    padding: 20px;
-    margin-top: 10px;
-  }
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Grosor de la línea */
+  background-color: rgb(42, 216, 79); /* Color de la línea */
+}
 
-  p, button, h3, h2, h5 {
-    color: white;
-  }
+.tab-content {
+  margin-top: 10px;
+}
 
-  .skills-list {
-    display: flex;
+.skills-columns li svg {
+  vertical-align: middle;
+}
+
+p, button, h3, h2, h5 {
+  color: white;
+}
+
+.skills-list {
+  display: flex;
 }
 
 h5 {
+  font-size: 1.5em;
   color: white;
 }
 
 .skills-columns {
-    flex: 1; /* Para que cada columna ocupe el mismo espacio */
-    padding: 0 1em; /* Espacio entre las columnas */
+  flex: 1; /* Para que cada columna ocupe el mismo espacio */
+  padding: 0 1em; /* Espacio entre las columnas */
 }
 
 /* Estilos opcionales para mejorar la apariencia */
 .skills-columns li {
-    margin-bottom: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .tab-content li{
@@ -114,4 +118,53 @@ body.light .h3personzalizado {
 
 body.light .linksA:hover{
   color: rgb(116, 236, 252);
+}
+
+.rowAbout {
+  display: flex;
+  height: 36em;
+  width: 100%;
+  gap: 1em;
+}
+
+.colAbout {
+  flex: 1 1 100%;
+  padding: 1em;
+}
+
+@media (max-width: 768px) {
+  .rowAbout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colAbout {
+    flex: 1 1 100%;
+    padding: 0.5em;
+  }
+
+  .containerAbout img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+  .tabs-container {
+    width: 100%;
+  }
+
+  .rowAbout{
+    height: 70em;
+    width: 100%;
+  }
+}
+
+.imgAbout {
+  width: 100%;
+  height: auto;
+  max-width: 35em;
+  max-height: 33em;
+  object-fit: cover;
+  object-position: center;
 }

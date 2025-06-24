@@ -1,0 +1,137 @@
+.card{
+  border: none;
+  padding-bottom: 5em ;
+  background-color: transparent;
+  margin-top: 2em;
+  margin: auto; /*centra las cards*/
+  margin-bottom: 1.5em;
+}
+
+.cardCustom {
+  width: 22em;
+  margin: 2em auto 1.5em auto;
+}
+
+.cardBody h5 {
+  font-size: 1.3em;
+  margin-bottom: 0px;
+  margin-top: 3px;
+}
+
+.cardBody a {
+  display: inline-block; /* ← IMPORTANTE */
+  width: 99px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 0.3em;
+  border: solid 1px rgb(42, 216, 79);
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  margin: 0.2em;
+  background-color: rgb(42, 216, 79);
+} 
+
+.cardBody a svg {
+  vertical-align: middle;
+}
+
+.cardBody {
+  background-color: rgb(39, 39, 39);
+  border-radius: 0.5em;
+  height: 10em;
+  padding: 1em;
+}
+
+.truncated {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* cantidad de líneas que querés mostrar */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-wrapper {
+  flex: 1 1 300px;
+  max-width: 360px;
+}
+
+.img-hover-effect {
+  transition: transform 0.3s ease;
+}
+
+.img-hover-effect:hover {
+  transform: scale(1.10); /* Aumenta el tamaño al 105% */
+}
+
+
+.cardBody .iconY:hover, .cardBody .iconG:hover , .cardBody .iconD:hover {
+  background-color: rgb(22, 110, 41); /* Color de fondo cuando se pasa el cursor */
+  color: black;
+}
+
+
+.image-overlay-container {
+  position: relative;
+  display: block;
+}
+
+.cardCustom img {
+  border-radius: 0.5em;
+  width: 100%;
+  height: 13em;
+  object-fit: cover;
+  transition: transform 0.3s ease, opacity 0.7s ease;
+}
+
+  /* Cambios al hacer hover */
+.image-overlay-container:hover .card-img-top {
+  transform: scale(1.10);
+  opacity: 0.5;
+}
+
+.image-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  font-size: 1.1em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Mostrar texto en hover */
+.image-overlay-container:hover .image-overlay-text {
+  opacity: 1;
+}
+
+.cardBody .card-title{
+  color: rgb(2, 204, 86);
+}
+
+body.light  .cardBody a {
+  background-color: rgb(106, 209, 223);
+  border: solid 1px rgb(116, 236, 252);
+}
+
+body.light  .cardBody .card-title{
+  color: rgb(116, 236, 252);
+}  
+
+body.light .cardBody{
+  background-color: rgb(196, 196, 196);
+}
+
+body.light .cardBody .iconY:hover, body.light .cardBody .iconG:hover , body.light .cardBody .iconD:hover {
+  background-color:rgb(54, 110, 117); /* Color de fondo cuando se pasa el cursor */
+}
+
+body.light .card .link {
+  border: none;
+}

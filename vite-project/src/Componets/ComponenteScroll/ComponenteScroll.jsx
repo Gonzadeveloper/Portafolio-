@@ -5,26 +5,28 @@ const ComponenteScroll = ({ children, direction = 'left' }) => {
   const ref = useRef();
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-        }
-      },
-      {
-        threshold: 0.6, // Aumentalo a 0.6 o 0.8 para más visibilidad
+useEffect(() => {
+  const isMobile = window.innerWidth <= 768;
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect(); // Desconectamos una vez visible
       }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
+    },
+    {
+      threshold: isMobile ? 0.15 : 0.4, // Menor threshold en mobile
     }
+  );
 
-    return () => {
-      if (ref.current) observer.unobserve(ref.current);
-    };
-  }, []);
+  if (ref.current) {
+    observer.observe(ref.current);
+  }
+
+  return () => {
+    if (ref.current) observer.unobserve(ref.current);
+  };
+}, []);
 
   return (
     <div

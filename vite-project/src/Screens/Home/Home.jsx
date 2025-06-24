@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import avatar from "../../assets/avatar.jpg";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { motion } from "framer-motion"
 
 function Home() {
@@ -32,9 +31,9 @@ function Home() {
       animate={{ opacity: 1, y: 0 }} // aparece y sube
       transition={{ duration: 1.2 }}
     >
-      <div className='container-fluid containerHome' id='Home'>
-        <div className='row align-items-center'>
-          <div className='col-12 col-md-6'>
+      <div className='containerHome' id='Home'>
+        <div className='rowHome'>
+          <div className='colHome'>
             <div className="texto-animated">
               <span className="texto-cambiar1">Hola, soy <br /></span>
               <span className="texto-cambiar">{textos[indice]}</span>
@@ -45,7 +44,7 @@ function Home() {
               <button className='botonesHome2' onClick={handleDownloadClick}><span>Mira mi CV</span></button>
             </div>
           </div>
-          <div className='divImg col-12 col-md-6'>
+          <div className='divImg colHome'>
             <img src={avatar} alt="Avatar" className="img-fluid1" />
           </div>
         </div>
