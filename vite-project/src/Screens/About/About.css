@@ -136,6 +136,8 @@ body.light .linksA:hover{
   .rowAbout {
     flex-direction: column;
     align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 
   .colAbout {
