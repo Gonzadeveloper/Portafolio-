@@ -50,26 +50,42 @@ async def get_models():
 @app.post("/ask")
 async def ask(request: AskRequest):
     # Embed la pregunta
-    query_embed = co.embed(texts=[request.question], input_type="search_query").embeddings[0]
+    query_embed = co.embed(
+        texts=[request.question],
+        input_type="search_query"
+    ).embeddings[0]
 
     # Calcular similitud (dot product entre embeddings)
     scores = np.dot(embeddings, query_embed)
-    best_idx = np.argmax(scores)
 
-    best_doc = documents[best_idx]
+    # Obtener los índices de los top_k más similares
+    top_k = 5  # cantidad de chunks que queremos recuperar
+    best_indices = np.argsort(scores)[::-1][:top_k]
+
+    # Mostrar en consola los chunks recuperados
+    print("\n🔍 Chunks recuperados para la respuesta:")
+    for idx in best_indices:
+        print(f"- Score: {scores[idx]:.4f} | Texto: {documents[idx]}\n")
+
+    # Combinar los chunks para dárselos al modelo
+    context = "\n".join([documents[idx] for idx in best_indices])
 
     prompt = f"""
         Sos un asistente de inteligencia artificial especializado únicamente en responder preguntas sobre Gonzalo.
+
+        🎯 Tu rol es actuar como un asistente que habla sobre Gonzalo, no como si fueras él.
+        🗣️ Siempre respondé en tercera persona, usando expresiones como: "Gonzalo sabe...", "Gonzalo trabajó en...", "Él tiene experiencia en...", etc.
+        🙅‍♂️ Nunca uses frases en primera persona como "yo", "mi experiencia", "sé", "me especializo", etc.
 
         📌 Solo podés usar la siguiente información para responder.  
         ❌ No inventes ni agregues contenido fuera del contexto.  
         ❓ Si no tenés la información, respondé: "No tengo información sobre eso de Gonzalo."
 
         Información:
-        {best_doc}
+        {context}
 
         Pregunta: {request.question}
-        """
+    """
 
     # Llamar a generate con ese contexto
     response = co.generate(
@@ -78,4 +94,5 @@ async def ask(request: AskRequest):
         max_tokens=200
     )
 
-    return {"respuesta": response.generations[0].text.strip()}
+    return {"answer": response.generations[0].text.strip()}
+

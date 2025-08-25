@@ -1,0 +1,222 @@
+[
+    {
+        "text": "Mi nombre es Gonzalo Cayssials. Soy desarrollador web argentino con base en La Plata", 
+        "tags": ["Mi Nombre", "Locacion"]
+    },
+    {
+        "text": "Naci el 22/11/1996", 
+        "tags": ["Mi Nombre", "Nacimiento"]
+    },
+    {
+        "text": "Mi mail de contacto es gonzaloncayssials@gmail.com", 
+        "tags": ["mail"]
+    },
+    {
+        "text": "Mi celular de contacto es 2213149324", 
+        "tags": ["celular"]
+    },
+    {
+        "text": "Mi Linkedin es Gonzalo cayssials y se puede ver mi perfil con este link 'https://www.linkedin.com/in/gonzalo-cayssials-610bb5254/'", 
+        "tags": ["Linkedin"]
+    },
+    {
+        "text": "Mi GitHub es Gonzadeveloper y se puede ver mi perfil con este link 'https://github.com/Gonzadeveloper'", 
+        "tags": ["GitHub"]
+    },
+    {
+        "text": "Estudié en el bootcamp Henry con titulo en 'Desarrollador Web Full-Stack' entre 2023 y 2024", 
+        "tags": ["Estudios", "Henry"]
+    },
+    {
+        "text": "Henry es un bootcamp de 800 horas de cursado teórico práctico",
+        "tags": ["Estudios", "Henry"]
+    }
+    ,
+    {
+        "text": "Lenguajes que manejo son Python, Javascript y TypeScript. Todos aplicados en distintos proyectos que se pueden ver en mi porfolio",
+        "tags": ["Estudios", "Lenguajes"]
+    },
+    {
+        "text": "Las librerias que manejo son varias como  Redux, React Router DOM, Axios, WebSockets, JWT, Bootstrap, Vite, Bcrypt, Formik, Jest, Cypress, Tailwind CSS. Todos aplicados en distintos proyectos que se pueden ver en mi porfolio",
+        "tags": ["Estudios", "Librerias"]
+    },
+    {
+        "text": "Manejo bases de datos relacionales y no relacionales como PostgreSQL, MongoDB. Ambas aplicadas en distintos proyectos que se pueden ver en mi porfolio",
+        "tags": ["Estudios", "DBs"]
+    },
+    {
+        "text": "Herramientas que manejo Git, Jira, Confluence, Slack, Postman, Insomnia, VS Code. todas aplicadas en distintos proyectos que se pueden ver en mi porfolio",
+        "tags": ["Estudios", "Herramientas"]
+    },
+    {
+        "text": "Trabajo bajo metodologias agiles de trabjo como Scrum",
+        "tags": ["Estudios", "metodologiasdetrabajo"]
+    },
+    {
+        "text": "En Henry aprendi el stack PERN PostgreSQL, Express React y Node.js", 
+        "tags": ["Estudios", "PostgreSQL", "Express", "React", "Node.js"]
+    },
+    {
+        "text": "Estudié en el bootcamp Henry con titulo en 'Desarrollador Web Full-Stack' entre 2023 y 2024", 
+        "tags": ["Estudios"]
+    },
+    {
+        "text": "Antes de entrar a Henry para prepararme estudie en Educación IT un curso de Introducción al desarrollo web en 2023", 
+        "tags": ["Estudios", "Educacion IT", "Introduccion al desarrollo web"]
+    },
+    {
+        "text": "Antes de entrar a Henry para prepararme estudie en Educación IT un curso de Introducción a JavaScript en 2023", 
+        "tags": ["Estudios", "Educacion IT", "Introducción a JavaScript"]
+    },
+    {
+        "text": "Estudié en el bootcamp Henry con titulo en 'Desarrollador Web Full-Stack' entre 2023 y 2024", 
+        "tags": ["Estudios"]
+    },
+    {
+        "text": "me formé como tester QA en 2023, haciendo cursos en Academia QA", 
+        "tags": ["Estudios", "QA"]
+    },
+    {
+        "text": "He desarrollado múltiples proyectos web como desarrollador full stack.", 
+        "tags": ["Desarrollador", "full stack"]
+    }
+    ,
+    {
+        "text": "Me especializo en JavaScript, TypeScript, React, Node.js, PostgreSQL y MongoDB.", 
+        "tags": ["JavaScript", "TypeScript", "React", "Node.js", "PostgreSQL", "MongoDB" ]
+    }
+    ,
+    {
+        "text": "Uno de mis proyectos destacados es AppCar", 
+        "tags": ["Proyectos", "AppCar"]
+    }
+    ,
+    {
+        "text": "AppCar es una aplicación móvil desarrollada en React Native para combatir el fraude en la venta de autos usados", 
+        "tags": ["Proyectos", "AppCar"]
+    }
+    ,
+    {
+        "text": "AppCar Utiliza OCR, web scraping con Python y verificación de kilometraje cruzando datos de fuentes públicas.", 
+        "tags": ["Proyectos", "AppCar"]
+    }
+    ,
+    {
+        "text": "AppCar fue Desarrollado completamente por mi cuenta", 
+        "tags": ["Proyectos", "AppCar"]
+    }
+    ,
+    {
+        "text": "AppCar fue Desarrollado con tecnologias como React Native para el Front-end y Node.js con Express para el Back-end", 
+        "tags": ["Proyectos", "AppCar"]
+    }
+    ,
+    {
+        "text": "AppCar esta en desarrollo desde mayo de 2025", 
+        "tags": ["Proyectos", "AppCar"]
+    }
+    ,
+    {
+        "text": "desarrollé FluentWay, una landing page con sistema de login/registro y packs de cursos de inglés.", 
+        "tags": ["Proyectos", "FluentWay"]
+    }
+    ,
+    {
+        "text": "En FluentWay Usé React para el frontend y Node.js con Express y PostgreSQL en el backend. Implementé autenticación con JWT", 
+        "tags": ["Proyectos", "FluentWay", "JWT", "back-end","Express", "Node.js"]
+    }
+    ,
+    {
+        "text": "Pedilo, una app de viajes al estilo Uber.", 
+        "tags": ["Proyectos", "Pedilo"]
+    }
+    ,
+    {
+        "text": "En el proyecto Pedilo me encargué de toda la lógica de backend, incluyendo WebSockets para ubicación en tiempo real y un algoritmo para encontrar el conductor más cercano.", 
+        "tags": ["Proyectos", "Pedilo", "back-end","SocketIO"]
+    }
+    ,
+    {
+        "text": "Trabaje para Finanzas SRL en el proyecto CashIn junto a 3 Desarrolladores mas y un data science", 
+        "tags": ["Proyectos", "CashIn"]
+    }
+    ,
+    {
+        "text": "CashIn  es una app de finanzas personales con IA.", 
+        "tags": ["Proyectos", "CashIn", "Fiananzas"]
+    }
+    ,
+    {
+        "text": "En CashIn me ocupé del backend completo, autenticación con OAuth y diseño de base de datos en PostgreSQL. También integré rutas y lógica de negocio con Node.js y Express.", 
+        "tags": ["Proyectos", "CashIn", "OAuth", "PostgreSQL", "Node.js", "Express"]
+    }
+    ,
+    {
+        "text": "Hice un proyecto llamado Chat IA", 
+        "tags": ["Proyectos", "Chat IA"]
+    }
+    ,
+    {
+        "text": "Chat IA utiliza LLaMA 3 y tecnologías como WebGPU y Web Workers para correr modelos directamente en el navegador, sin backend. ", 
+        "tags": ["Proyectos", "Chat IA", "LLaMA 3", "WebGPU", "Web Workers"]
+    }
+    ,
+    {
+        "text": "Mi experiencia también incluye liderar el frontend del e-commerce Electro Emporium", 
+        "tags": ["Proyectos", "Electro Emporium"]
+    }
+    ,
+    {
+        "text": "Electro Emporium usa React, Redux, TypeScript y Bootstrap.", 
+        "tags": ["Proyectos", "Electro Emporium", "React", "Redux", "TypeScript", "Bootstrap."]
+    }
+    ,
+    {
+        "text": "En Electro Emporium me encargué de las rutas, filtros, carrito, y conexión con MercadoPago. ", 
+        "tags": ["Proyectos", "Electro Emporium", "Mercadopago"]
+    }
+    ,
+    {
+        "text": "Mi primer proyecto académico fue PI Drivers, ahi sente las bases del desarrollo web con el stack PERN", 
+        "tags": ["Proyectos", "PI Drivers", "PERN"]
+    }
+    ,
+    {
+        "text": "En el proyecto PI Drivers hice lo siguiente listar, filtrar y crear pilotos de Fórmula 1", 
+        "tags": ["Proyectos", "PI Drivers"]
+    }
+    ,
+    {
+        "text": "Este proyecto PI Drivers me ayudó a entender en profundidad las bases del desarrollo full stack", 
+        "tags": ["Proyectos", "PI Drivers"]
+    }
+    ,
+    {
+        "text": "trabajé como Back-end developer en Lumia SRL en un sistema de autocoaching financiero con IA llamdo CashIn", 
+        "tags": ["Proyectos", "Lumia SRL", "CashIn"]
+    }
+    ,
+    {
+        "text": "Mi trabajo en CashIn se baso en Implementar una API robusta, autenticación y recomendaciones personalizadas", 
+        "tags": ["Proyectos", "Lumia SRL", "CashIn"]
+    }
+    ,
+    {
+        "text": "genero contenido en TikTok e Instagram sobre desarrollo web para ayudar a otros a aprender", 
+        "tags": ["TikTok", "Instagram", "Influencer"]
+    } 
+    ,
+    {
+        "text": "Mis habilidades incluyen comunicación, liderazgo, resolución de problemas, flexibilidad, adaptabilidad y aprendizaje continuo", 
+        "tags": ["SoftSkils"]
+    } 
+    ,
+    {
+        "text": "Me interesa trabajar en equipos que desafíen mi capacidad técnica y me permitan crecer como desarrollador", 
+        "tags": ["Intereses Personales"]
+    } 
+]
+
+
+
+
