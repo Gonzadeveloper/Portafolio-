@@ -9,6 +9,8 @@ function IAhchat() {
   const [mensajes, setMensajes] = useState([]);
   const [loading, setLoading] = useState(false);
 
+  console.log(mensajes)
+
   const handleOpenChat = () => setIsChatOpen(true);
   const handleCloseChat = () => {
     setIsChatOpen(false);
@@ -37,8 +39,10 @@ function IAhchat() {
 
       const data = await response.json();
 
+      console.log(data)
+
       // Agregamos la respuesta al historial
-      setMensajes((prev) => [...prev, { autor: 'ia', texto: data.respuesta }]);
+      setMensajes((prev) => [...prev, { autor: 'ia', texto: data.answer }]);
     } catch (error) {
       setMensajes((prev) => [...prev, {
         autor: 'ia',
