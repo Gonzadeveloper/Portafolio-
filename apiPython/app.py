@@ -88,11 +88,11 @@ async def ask(request: AskRequest):
     """
 
     # Llamar a generate con ese contexto
-    response = co.generate(
+    response = co.chat(
         model="command-r-08-2024",
-        prompt=prompt,
+        message=prompt,
         max_tokens=200
     )
 
-    return {"answer": response.generations[0].text.strip()}
+    return {"answer": response.text.strip()}
 
